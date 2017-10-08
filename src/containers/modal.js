@@ -15,13 +15,13 @@ import { Button, Modal, Grid, Menu, Segment, Checkbox } from 'semantic-ui-react'
 
 const UserAvailability = ({user}) => {
     const week_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    var Monday = user.mon
-    var Tuesday = user.tues
-    var Wednesday = user.wed
-    var Thursday = user.thurs
-    var Friday = user.fri
-    var Saturday = user.sat
-    var Sunday = user.sun
+    var Monday = user.week.mon
+    var Tuesday = user.week.tues
+    var Wednesday = user.week.wed
+    var Thursday = user.week.thurs
+    var Friday = user.week.fri
+    var Saturday = user.week.sat
+    var Sunday = user.week.sun
 
     const Fill = ({day, hour}) => {
 
