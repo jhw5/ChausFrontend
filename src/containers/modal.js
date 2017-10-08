@@ -4,7 +4,6 @@
 import React, {Component} from 'react'
 import _ from 'lodash'
 import {connect} from 'react-redux'
-import { selectUser } from '../actions/userActions'
 import { Button, Modal, Grid, Menu, Segment, Checkbox } from 'semantic-ui-react'
 
 // const CheckboxExampleShorthandObject = () => (
@@ -14,7 +13,7 @@ import { Button, Modal, Grid, Menu, Segment, Checkbox } from 'semantic-ui-react'
 
 
 
-const GridExampleGrid = ({user}) => {
+const UserAvailability = ({user}) => {
     const week_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     var Monday = user.mon
     var Tuesday = user.tues
@@ -23,30 +22,6 @@ const GridExampleGrid = ({user}) => {
     var Friday = user.fri
     var Saturday = user.sat
     var Sunday = user.sun
-
-    const divStyle = {
-        display: '',
-    };
-
-    // if (arr.map((x) => x==i ? true:false)) {
-    //     return (
-    //         <Grid.Column key={i} checked={true}>
-    //             <Checkbox/>
-    //         </Grid.Column>
-    //     )
-    // } else {
-    //     return (
-    //         <Grid.Column key={i}>
-    //             <Checkbox/>
-    //         </Grid.Column>
-    //     )
-    // }
-    // const Columns = () => {
-    //     // if (arr == null) {
-    //     //     arr = [-1]
-    //     // }
-    //
-    // }
 
     const Fill = ({day, hour}) => {
 
@@ -134,4 +109,4 @@ export default connect(
             user: state.activeReducer.user
         }
     }
-)(GridExampleGrid)
+)(UserAvailability)

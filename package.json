@@ -78,7 +78,6 @@
     "redux-thunk": "^2.1.0",
     "rimraf": "^2.5.4",
     "selenium-webdriver": "^2.53.2",
-    "semantic-ui": "^2.2.11",
     "serve": "^1.4.0",
     "sinon": "^2.0.0-pre",
     "source-map-loader": "^0.1.5",
